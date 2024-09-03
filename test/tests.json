@@ -1,0 +1,10 @@
+{
+    "glb-fra": {
+        "input": "glb-fra-input.txt",
+        "mode": "glb-fra"
+    },
+    "fra-glb": {
+        "input": "fra-glb-input.txt",
+        "mode": "fra-glb"
+    }
+}
