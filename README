@@ -1,12 +1,12 @@
-glb and French: `apertium-glb-fra`
+Globasa and French: `apertium-glb-fra`
 ===============================================================================
 
-This is an Apertium language pair for translating between glb and
+This is an Apertium language pair for translating between Globasa and
 French. What you can use this language package for:
 
-* Translating between glb and French
-* Morphological analysis of glb and French
-* Part-of-speech tagging of glb and French
+* Translating between Globasa and French
+* Morphological analysis of Globasa and French
+* Part-of-speech tagging of Globasa and French
 
 For information on the latter two points, see subheading "For more
 information" below.
@@ -72,13 +72,13 @@ Files and data
 
 * [`apertium-glb-fra.glb-fra.dix`](apertium-glb-fra.glb-fra.dix) - Bilingual dictionary
 * [`apertium-glb-fra.glb-fra.rtx`](apertium-glb-fra.glb-fra.rtx) - Structural transfer rules for translating into French
-* [`apertium-glb-fra.fra-glb.rtx`](apertium-glb-fra.fra-glb.rtx) - Structural transfer rules for translating into glb
+* [`apertium-glb-fra.fra-glb.rtx`](apertium-glb-fra.fra-glb.rtx) - Structural transfer rules for translating into Globasa
 * [`apertium-glb-fra.glb-fra.lrx`](apertium-glb-fra.glb-fra.lrx) - Lexical selection rules for translating into French
-* [`apertium-glb-fra.fra-glb.lrx`](apertium-glb-fra.fra-glb.lrx) - Lexical selection rules for translating into glb
+* [`apertium-glb-fra.fra-glb.lrx`](apertium-glb-fra.fra-glb.lrx) - Lexical selection rules for translating into Globasa
 * [`apertium-glb-fra.glb-fra.lsx`](apertium-glb-fra.glb-fra.lsx) - Discontiguous multiword rules for translating into French
-* [`apertium-glb-fra.fra-glb.lsx`](apertium-glb-fra.fra-glb.lsx) - Discontiguous multiword rules for translating into glb
+* [`apertium-glb-fra.fra-glb.lsx`](apertium-glb-fra.fra-glb.lsx) - Discontiguous multiword rules for translating into Globasa
 * [`apertium-glb-fra.glb-fra.arx`](apertium-glb-fra.glb-fra.arx) - Anaphora resolution rules for translating into French
-* [`apertium-glb-fra.fra-glb.arx`](apertium-glb-fra.fra-glb.arx) - Anaphora resolution rules for translating into glb
+* [`apertium-glb-fra.fra-glb.arx`](apertium-glb-fra.fra-glb.arx) - Anaphora resolution rules for translating into Globasa
 * [`modes.xml`](modes.xml) - Translation modes
 
 For more information
