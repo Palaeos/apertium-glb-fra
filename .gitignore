@@ -22,3 +22,20 @@
 /config.in
 /config
 /test/*-output.txt
+# local environment files that ended up in the worktree
+/.bash_profile
+/.bashrc
+/.gitconfig
+/.profile
+/.ripgreprc
+/.zprofile
+/.zshrc
+/.idea
+/.vscode
+/.mcp.json
+/*.bak
+/configure~
+# imparfait classifier: downloaded corpus and training venv
+/dev/imparfait/data
+/dev/imparfait/.venv
+/__pycache__
