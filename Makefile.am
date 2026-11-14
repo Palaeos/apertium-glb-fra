@@ -35,7 +35,8 @@ TARGETS_DIR2 =		\
 	$(PREFIX2).autopgen.bin	\
 	$(PREFIX2).autoseq.bin	\
 	$(PREFIX2).revautoseq.bin	\
-	$(PREFIX2).rtx.bin
+	$(PREFIX2).rtx.bin	\
+	$(PREFIX2).perf.rtx.bin
 
 TRIMMED_TARGETS_DIR2 = \
 	$(PREFIX2).automorf.bin
@@ -55,7 +56,9 @@ SOURCES = \
 	$(BASENAME).$(PREFIX2).lsx	\
 	$(BASENAME).$(PREFIX1).dix			\
 	$(BASENAME).$(PREFIX1).lrx			\
-	$(BASENAME).$(PREFIX2).lrx
+	$(BASENAME).$(PREFIX2).lrx			\
+	$(PREFIX2)-imparfait.py			\
+	$(PREFIX2).imparfait.json
 
 glb-fra: $(TARGETS_DIR1) $(TRIMMED_TARGETS_DIR1)
 fra-glb: $(TARGETS_DIR2) $(TRIMMED_TARGETS_DIR2)
@@ -181,8 +184,14 @@ $(PREFIX2).revautoseq.bin: $(BASENAME).$(PREFIX1).lsx
 $(PREFIX1).rtx.bin: $(BASENAME).$(PREFIX1).rtx
 	rtx-comp $< $@
 
+# Passé composé switch: the same rules compiled twice, excluding one named rule each time.
+#   $(PREFIX2).rtx.bin      → le      (mode $(PREFIX2))
+#   $(PREFIX2).perf.rtx.bin → nun le  (mode $(PREFIX2)_perf)
 $(PREFIX2).rtx.bin: $(BASENAME).$(PREFIX2).rtx
-	rtx-comp $< $@
+	rtx-comp -e pc_perf $< $@
+
+$(PREFIX2).perf.rtx.bin: $(BASENAME).$(PREFIX2).rtx
+	rtx-comp -e pc_past $< $@
 
 ###############################################################################
 ## Postgeneration dictionaries

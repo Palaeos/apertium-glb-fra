@@ -64,6 +64,11 @@
       <program name="apertium-tagger -g $2">
         <file name="fra-glb.prob"/>
       </program>
+      <!-- imparfait sense: appends <hab>/<prog> (habitual → le du-V, progressive → le nun V) -->
+      <program name="python3 -I" debug-suff="imparfait">
+        <file name="fra-glb-imparfait.py"/>
+        <file name="fra-glb.imparfait.json"/>
+      </program>
 
       <program name="lsx-proc">
         <file name="fra-glb.autoseq.bin"/>
@@ -82,6 +87,58 @@
 
       <program name="rtx-proc -a">
         <file name="fra-glb.rtx.bin"/>
+      </program>
+      <program name="lsx-proc" debug-suff="revautoseq">
+        <file name="fra-glb.revautoseq.bin"/>
+      </program>
+
+      <program name="lt-proc $1">
+        <file name="fra-glb.autogen.bin"/>
+      </program>
+      <program name="lt-proc -p">
+        <file name="fra-glb.autopgen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <!-- fra → glb, passé composé as present perfect (nun le) instead of simple past (le) -->
+  <mode name="fra-glb_perf" install="yes" gendebug="yes">
+    <pipeline>
+
+      <program name="lt-proc -w">
+        <file name="fra-glb.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="fra-glb.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="fra-glb.prob"/>
+      </program>
+      <!-- imparfait sense: appends <hab>/<prog> (habitual → le du-V, progressive → le nun V) -->
+      <program name="python3 -I" debug-suff="imparfait">
+        <file name="fra-glb-imparfait.py"/>
+        <file name="fra-glb.imparfait.json"/>
+      </program>
+
+      <program name="lsx-proc">
+        <file name="fra-glb.autoseq.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fra-glb.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="fra-glb.autolex.bin"/>
+      </program>
+      <program name="apertium-anaphora">
+        <file name="apertium-glb-fra.fra-glb.arx"/>
+      </program>
+
+
+      <program name="rtx-proc -a">
+        <file name="fra-glb.perf.rtx.bin"/>
       </program>
       <program name="lsx-proc" debug-suff="revautoseq">
         <file name="fra-glb.revautoseq.bin"/>

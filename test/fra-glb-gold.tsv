@@ -1,0 +1,83 @@
+# French sentence<TAB>expected Globasa (alternatives separated by " | ")
+# Sources: xwexi Spanish edition (04.gramati) for the Globasa side; Wikibooks French/Francés for the French side.
+# Noun phrase: no articles, no default un/plu, adjectives before the noun
+Le chat mange le poisson.	Myaw yam mahi.
+Les chats mangent.	Myaw yam.
+Le petit chat dort.	Lil myaw somno.
+Le chat jaune dort.	Jalo myaw somno.
+La maison grise est grande.	Hwese baytu sen day.
+Le chat de Marie dort.	Myaw de Maria somno.
+Mon chat dort.	Misu myaw somno.
+Notre chat dort.	Imisu myaw somno.
+# Tense particles
+Je mangeais.	Mi le yam. | Mi le nun yam.
+Elle mangera.	Te xa yam.
+Tu mangerais.	Yu ger yam.
+Mange !	Am yam !
+Nous mangerons demain.	Imi xa yam jaxadin. | Imi xa yam xadin.
+J'ai mangé.	Mi le yam.
+J'avais mangé.	Mi le le yam.
+J'aurai mangé.	Mi xa le yam.
+J'aurais mangé.	Mi ger le yam.
+Je suis venu.	Mi le ata.
+Je vais manger.	Mi nun xa yam. | Mi xa yam.
+Je viens de manger.	Mi jale yam.
+# Passive: be- prefix, agent as bare object
+Le poisson est mangé par le chat.	Mahi beyam myaw.
+Le poisson a été mangé par le chat.	Mahi le beyam myaw.
+# Negation
+Je ne mange pas le poisson.	Mi no yam mahi.
+Je n'ai pas mangé.	Mi le no yam.
+Je ne mange jamais.	Mi nilwatu yam.
+Je ne mange rien.	Mi yam nilto.
+Je ne vois personne.	Mi oko nilte.
+# Clitics after the verb
+Il me voit.	Te oko mi.
+Je lui donne le livre.	Mi gibe kitabu tas te. | Mi gibe tas te kitabu.
+# Questions
+Est-ce que tu manges du poisson ?	Kam yu yam mahi ?
+Manges-tu du poisson ?	Kam yu yam mahi ?
+# Existential, impersonal
+Il y a un chat.	Hay myaw. | Hay un myaw.
+On mange.	Ren yam.
+# Modals and infinitives
+Je peux manger.	Mi abil na yam. | Mi abil yam.
+Je veux manger.	Mi vole na yam.
+Je mange pour vivre.	Mi yam cel na jiwa.
+# Comparison
+Le chat est plus grand que le chien.	Myaw sen maxmo day kom bwaw.
+# Relatives
+Le chat qui mange dort.	Myaw hu da yam somno.
+J'aime le poisson que je mange.	Mi lubi mahi hu mi yam da.
+# Anaphora: te/to follows the antecedent's Globasa gender
+Le chat dort. Il mange.	Myaw somno. Te yam.
+La maison est grande. Elle est jaune.	Baytu sen day. To sen jalo.
+# Additional constructions
+Mon ami parle avec la femme.	Misu doste pala ton femixu.
+Nous ne pouvons pas venir demain.	Imi no abil na ata xadin. | Imi no abil na ata jaxadin.
+Le garçon a donné le livre à sa mère.	Manyen le gibe kitabu tas tesu matre.
+Où vas-tu ?	Yu idi keloka ?
+Je pense que tu es grand.	Mi fikir ki yu sen day.
+Si je mange, je dors.	Eger mi yam, mi somno.
+Il ne mange plus de poisson.	Te no haji yam mahi.
+Je n'ai que du pain.	Mi hare sol roti.
+Elle est partie avant de manger.	Te le awidi lefe na yam.
+La femme que j'aime est jeune.	Femixu hu mi lubi da sen juni.
+Je vais le voir.	Mi nun xa oko to. | Mi nun xa oko te.
+Il faut manger.	Hay haja na yam.
+Il y avait un chat.	Le hay myaw.
+Donne-le-moi !	Am gibe to tas mi !
+La table est grande. Je la vois.	Mesa sen day. Mi oko to.
+La maison est grande. Sa porte est jaune.	Baytu sen day. Tosu dwer sen jalo.
+Les chats dorment. Ils mangent.	Myaw somno. Ete yam.
+# Imparfait sense (classifier) and unreal conditions
+Je mangeais souvent des pommes.	Mi le duyam pimpan pingo.
+Quand j'étais jeune, je jouais au football.	Denwatu hu mi le sen juni, mi le duyuxi fe pedabol.
+Je dormais quand tu es venu.	Mi le nun somno denwatu hu yu le ata.
+J'étais malade.	Mi le sen bimaryen.
+Si je mangeais, je dormirais.	Eger mi yam, mi ger somno.
+Si je ne mangeais pas, je mourrais.	Eger mi no yam, mi ger morcu.
+# Baseline sentences from the original review
+Le chat mange la souris.	Myaw yam maux.
+Il y a beaucoup de livres.	Hay multi kitabu.
+La maison de Marie est plus grande que la mienne.	Baytu de Maria sen maxmo day kom misu to.

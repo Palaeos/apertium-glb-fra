@@ -1,0 +1,134 @@
+[06XMk58KVm9o#0] ^Prpers<det><pos><p1><ut><pl>$ ^myaw<n><ut>$ ^somno<vblex>$^.<sent>$
+[/06XMk58KVm9o]
+[1S1nbIZPmX4n#0] ^Prpers<prn><p3><ut><sg>$ ^u<vbpr><past>$ ^awidi<vblex>$ ^lefe<pr>$ ^u<vbpr><inf>$ ^yam<vblex>$^.<sent>$
+[/1S1nbIZPmX4n]
+[1xhMGZ54Qg-3#0] ^Femixu<n><f>$ ^hu<cnjsub>$ ^prpers<prn><p1><ut><sg>$ ^lubi<vblex>$ ^da<prn>$ ^sen<vblex>$ ^juni<adj>$^.<sent>$
+[/1xhMGZ54Qg-3]
+[2_2qnUtRdS3Y#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><cni><perf>$ ^yam<vblex>$^.<sent>$
+[/2_2qnUtRdS3Y]
+[3YS4Qi2UkrOc#0] ^Mahi<n><ut>$ ^u<vbpr><past>$ ^be<pfx>$^yam<vblex>$ ^myaw<n><ut>$^.<sent>$
+[/3YS4Qi2UkrOc]
+[4F8W9b2TDKP0#0] ^Myaw<n><ut>$ ^somno<vblex>$^.<sent>$ ^Prpers<prn><p3><ut><sg>$ ^yam<vblex>$^.<sent>$
+[/4F8W9b2TDKP0]
+[6-5G--4HfEfQ#0] ^Kam<cnjcoo>$ ^prpers<prn><p2><ut><sg>$ ^yam<vblex>$ ^mahi<n><ut>$ ^?<sent>$
+[/6-5G--4HfEfQ]
+[7o4HgZkIcvaJ#0] ^Prpers<det><pos><p1><ut><sg>$ ^doste<n><ut>$ ^pala<vblex>$ ^ton<pr>$ ^femixu<n><f>$^.<sent>$
+[/7o4HgZkIcvaJ]
+[8qQCZ75mmVFx#0] ^Prpers<prn><p1><ut><sg>$ ^hare<vblex>$ ^sol<adv>$ ^roti<n><nt>$^.<sent>$
+[/8qQCZ75mmVFx]
+[8ws-EzPPnWyP#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><past>$ ^du<pfx>$^yam<vblex>$ ^pimpan<adv>$ ^pingo<n><ut>$^.<sent>$
+[/8ws-EzPPnWyP]
+[9BeEmAjXLpO7#0] ^Prpers<prn><p3><ut><sg>$ ^oko<vblex>$ ^prpers<prn><p1><ut><sg>$^.<sent>$
+[/9BeEmAjXLpO7]
+[9CPwBUzTUSvV#0] ^Denwatu<adv>$ ^prpers<prn><p1><ut><sg>$ ^u<vbpr><past>$ ^sen<vblex>$ ^juni<adj>$^,<cm>$ ^prpers<prn><p1><ut><sg>$ ^u<vbpr><past>$ ^du<pfx>$^yuxi<vblex>$ ^fe<pr>$ ^pedabol<n><nt>$^.<sent>$
+[/9CPwBUzTUSvV]
+[9m4y5jQmhN5k#0] ^Eger<cnjsub>$ ^prpers<prn><p1><ut><sg>$ ^no<adv>$ ^yam<vblex>$^,<cm>$ ^prpers<prn><p1><ut><sg>$ ^u<vbpr><cni>$ ^morcu<vblex>$^.<sent>$
+[/9m4y5jQmhN5k]
+[ASBrivn4j1bo#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><past>$ ^yam<vblex>$^.<sent>$
+[/ASBrivn4j1bo]
+[CebvqVtsXmaa#0] ^Kam<cnjcoo>$ ^prpers<prn><p2><ut><sg>$ ^yam<vblex>$ ^mahi<n><ut>$ ^?<sent>$
+[/CebvqVtsXmaa]
+[DcSHGk-D2jKz#0] ^Prpers<prn><p1><ut><sg>$ ^abil<vbmod>$ ^u<vbpr><inf>$ ^yam<vblex>$^.<sent>$
+[/DcSHGk-D2jKz]
+[FXykQlIeGkDz#0] ^Prpers<prn><p1><ut><sg>$ ^gibe<vblex>$ ^tas<pr>$ ^prpers<prn><p3><ut><sg>$ ^kitabu<n><nt>$^.<sent>$
+[/FXykQlIeGkDz]
+[GJOxPFnrCNl5#0] ^Myaw<n><ut>$ ^de<pr>$ ^Maria<np><ut>$ ^somno<vblex>$^.<sent>$
+[/GJOxPFnrCNl5]
+[GrhRc6rpeVfh#0] ^Prpers<prn><p2><ut><sg>$ ^idi<vblex>$ ^keloka<adv>$ ^?<sent>$
+[/GrhRc6rpeVfh]
+[Hg32pmTID6qx#0] ^Baytu<n><nt>$ ^sen<vblex>$ ^day<adj>$^.<sent>$ ^Prpers<det><pos><p3><nt><sg>$ ^dwer<n><nt>$ ^sen<vblex>$ ^jalo<adj>$^.<sent>$
+[/Hg32pmTID6qx]
+[HnQhKPRu6Qnr#0] ^Hay<vblex>$ ^multi<adj>$ ^kitabu<n><nt>$^.<sent>$
+[/HnQhKPRu6Qnr]
+[I7GiadlVTEgV#0] ^Myaw<n><ut>$ ^yam<vblex>$ ^maux<n><nt>$^.<sent>$
+[/I7GiadlVTEgV]
+[Lt3azSSZ5nkr#0] ^Jalo<adj>$ ^myaw<n><ut>$ ^somno<vblex>$^.<sent>$
+[/Lt3azSSZ5nkr]
+[MiwweYvNApjs#0] ^Prpers<prn><p3><ut><sg>$ ^no<adv>$ ^haji<adv>$ ^yam<vblex>$ ^mahi<n><ut>$^.<sent>$
+[/MiwweYvNApjs]
+[OSWId07qoQop#0] ^Manyen<n><m>$ ^u<vbpr><past>$ ^gibe<vblex>$ ^kitabu<n><nt>$ ^tas<pr>$ ^prpers<det><pos><p3><ut><sg>$ ^matre<n><GD>$^.<sent>$
+[/OSWId07qoQop]
+[PJHhGpHMoJC9#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><past><impf>$ ^yam<vblex>$^.<sent>$
+[/PJHhGpHMoJC9]
+[QU9WIJrQDLzS#0] ^Prpers<prn><p1><ut><sg>$ ^oko<vblex>$ ^nil<prn><ut><sg>$^.<sent>$
+[/QU9WIJrQDLzS]
+[QW9MqWqkZk7O#0] ^Prpers<prn><p1><ut><sg>$ ^nilwatu<adv>$ ^yam<vblex>$^.<sent>$
+[/QW9MqWqkZk7O]
+[SI50MSzET6_5#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><fut><perf>$ ^yam<vblex>$^.<sent>$
+[/SI50MSzET6_5]
+[SOh02aE5eG9s#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><past><imme>$ ^yam<vblex>$^.<sent>$
+[/SOh02aE5eG9s]
+[Sgh0fvlZdzy5#0] ^Hay<vblex>$ ^haja<n><nt>$ ^u<vbpr><inf>$ ^yam<vblex>$^.<sent>$
+[/Sgh0fvlZdzy5]
+[THqyA29SuBC0#0] ^Myaw<n><ut>$ ^yam<vblex>$ ^mahi<n><ut>$^.<sent>$
+[/THqyA29SuBC0]
+[WA7IM9JSKC5y#0] ^Prpers<prn><p1><ut><sg>$ ^yam<vblex>$ ^cel<pr>$ ^u<vbpr><inf>$ ^jiwa<vblex>$^.<sent>$
+[/WA7IM9JSKC5y]
+[WXI0rmMD_LyK#0] ^Hay<vblex>$ ^myaw<n><ut>$^.<sent>$
+[/WXI0rmMD_LyK]
+[WpwL9XYipKDF#0] ^Mahi<n><ut>$ ^be<pfx>$^yam<vblex>$ ^myaw<n><ut>$^.<sent>$
+[/WpwL9XYipKDF]
+[X4NgEoDQaVsx#0] ^Ren<prn><p3><ut><sg>$ ^yam<vblex>$^.<sent>$
+[/X4NgEoDQaVsx]
+[XVvt9XMY-260#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><past><perf>$ ^yam<vblex>$^.<sent>$
+[/XVvt9XMY-260]
+[a1ZiKA1EDV_S#0] ^U<vbpr><imp>$ ^yam<vblex>$ ^!<sent>$
+[/a1ZiKA1EDV_S]
+[cResI_VKRnVe#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><past><impf>$ ^somno<vblex>$ ^denwatu<adv>$ ^hu<cnjsub>$ ^prpers<prn><p2><ut><sg>$ ^u<vbpr><past>$ ^ata<vblex>$^.<sent>$
+[/cResI_VKRnVe]
+[fKThR834nVCk#0] ^Mesa<n><nt>$ ^sen<vblex>$ ^day<adj>$^.<sent>$ ^Prpers<prn><p1><ut><sg>$ ^oko<vblex>$ ^prpers<prn><p3><nt><sg>$^.<sent>$
+[/fKThR834nVCk]
+[g2yIBzAZoPKt#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><pres><pros>$ ^oko<vblex>$ ^prpers<prn><p3><nt><sg>$^.<sent>$
+[/g2yIBzAZoPKt]
+[g4GhQTA0DLcm#0] ^Prpers<prn><p1><ut><sg>$ ^vole<vblex>$ ^u<vbpr><inf>$ ^yam<vblex>$^.<sent>$
+[/g4GhQTA0DLcm]
+[gi5C1AFj9BBb#0] ^Eger<cnjsub>$ ^prpers<prn><p1><ut><sg>$ ^yam<vblex>$^,<cm>$ ^prpers<prn><p1><ut><sg>$ ^somno<vblex>$^.<sent>$
+[/gi5C1AFj9BBb]
+[h_C2MWWieY8T#0] ^Prpers<det><pos><p1><ut><sg>$ ^myaw<n><ut>$ ^somno<vblex>$^.<sent>$
+[/h_C2MWWieY8T]
+[jcm-bWfTAJ9s#0] ^Eger<cnjsub>$ ^prpers<prn><p1><ut><sg>$ ^yam<vblex>$^,<cm>$ ^prpers<prn><p1><ut><sg>$ ^u<vbpr><cni>$ ^somno<vblex>$^.<sent>$
+[/jcm-bWfTAJ9s]
+[kEWMk3g7uXEi#0] ^Prpers<prn><p2><ut><sg>$ ^u<vbpr><cni>$ ^yam<vblex>$^.<sent>$
+[/kEWMk3g7uXEi]
+[ljysJDNmGHXI#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><past><neg>$ ^yam<vblex>$^.<sent>$
+[/ljysJDNmGHXI]
+[lxsq3Lz7Kw_X#0] ^Prpers<prn><p1><ut><sg>$ ^lubi<vblex>$ ^mahi<n><ut>$ ^hu<cnjsub>$ ^prpers<prn><p1><ut><sg>$ ^yam<vblex>$ ^da<prn>$^.<sent>$
+[/lxsq3Lz7Kw_X]
+[oTDLaDZaHf1b#0] ^Myaw<n><ut>$ ^yam<vblex>$^.<sent>$
+[/oTDLaDZaHf1b]
+[oUeQ3XktyqnM#0] ^Lil<adj>$ ^myaw<n><ut>$ ^somno<vblex>$^.<sent>$
+[/oUeQ3XktyqnM]
+[oeJqKQzBNXj5#0] ^Prpers<prn><p1><ut><sg>$ ^yam<vblex>$ ^nil<prn><nt><sg>$^.<sent>$
+[/oeJqKQzBNXj5]
+[ogh9tgl-ZqRX#0] ^Myaw<n><ut>$ ^somno<vblex>$^.<sent>$ ^Prpers<prn><p3><ut><pl>$ ^yam<vblex>$^.<sent>$
+[/ogh9tgl-ZqRX]
+[p4aP_OarVSPN#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><pres><pros>$ ^yam<vblex>$^.<sent>$
+[/p4aP_OarVSPN]
+[qPPtL5wywMD-#0] ^Prpers<prn><p1><ut><pl>$ ^u<vbpr><fut>$ ^yam<vblex>$ ^xadin<n><nt>$^.<sent>$
+[/qPPtL5wywMD-]
+[qvf9oC8lwILW#0] ^Prpers<prn><p1><ut><sg>$ ^no<adv>$ ^yam<vblex>$ ^mahi<n><ut>$^.<sent>$
+[/qvf9oC8lwILW]
+[rC-HfjSfSHYE#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><past>$ ^sen<vblex>$ ^bimaryen<n><ut>$^.<sent>$
+[/rC-HfjSfSHYE]
+[rOyQ7oGQCBEi#0] ^Prpers<prn><p1><ut><pl>$ ^no<adv>$ ^abil<vbmod>$ ^u<vbpr><inf>$ ^ata<vblex>$ ^xadin<n><nt>$^.<sent>$
+[/rOyQ7oGQCBEi]
+[u4k8cmbX-UJu#0] ^Prpers<prn><p1><ut><sg>$ ^u<vbpr><past>$ ^ata<vblex>$^.<sent>$
+[/u4k8cmbX-UJu]
+[u97n5zOZriz6#0] ^Baytu<n><nt>$ ^sen<vblex>$ ^day<adj>$^.<sent>$ ^Prpers<prn><p3><nt><sg>$ ^sen<vblex>$ ^jalo<adj>$^.<sent>$
+[/u97n5zOZriz6]
+[uBj5JbyMwrQZ#0] ^Myaw<n><ut>$ ^sen<vblex>$ ^maxmo<adv>$ ^day<adj>$ ^kom<cnjcoo>$ ^bwaw<n><ut>$^.<sent>$
+[/uBj5JbyMwrQZ]
+[uxhD9IrQSvCo#0] ^Hwese<adj>$ ^baytu<n><nt>$ ^sen<vblex>$ ^day<adj>$^.<sent>$
+[/uxhD9IrQSvCo]
+[vVTen6pu0Wci#0] ^U<vbpr><imp>$ ^gibe<vblex>$ ^prpers<prn><p3><nt><sg>$ ^tas<pr>$ ^prpers<prn><p1><ut><sg>$ ^!<sent>$
+[/vVTen6pu0Wci]
+[wFt6qojsn2CI#0] ^Prpers<prn><p3><ut><sg>$ ^u<vbpr><fut>$ ^yam<vblex>$^.<sent>$
+[/wFt6qojsn2CI]
+[wsRs11A70Mvq#0] ^Baytu<n><nt>$ ^de<pr>$ ^Maria<np><ut>$ ^sen<vblex>$ ^maxmo<adv>$ ^day<adj>$ ^kom<cnjcoo>$ ^prpers<det><pos><p1><ut><sg>$ ^prpers<prn><p3><nt><sg>$^.<sent>$
+[/wsRs11A70Mvq]
+[xQeSMJQqgVxv#0] ^Prpers<prn><p1><ut><sg>$ ^fikir<vblex>$ ^ki<cnjsub>$ ^prpers<prn><p2><ut><sg>$ ^sen<vblex>$ ^day<adj>$^.<sent>$
+[/xQeSMJQqgVxv]
+[yKMG20WPgVWT#0] ^U<vbpr><past>$ ^hay<vblex>$ ^myaw<n><ut>$^.<sent>$
+[/yKMG20WPgVWT]
+[zNAlOA-ngX4v#0] ^Myaw<n><ut>$ ^hu<cnjsub>$ ^da<prn>$ ^yam<vblex>$ ^somno<vblex>$^.<sent>$
+[/zNAlOA-ngX4v]

@@ -1,48 +1,384 @@
+!! French → Globasa structural transfer (apertium-recursive)
+!!
+!! Each block cites the grammar point it implements:
+!!   [xw NN:LL]  Globasa grammar, Spanish edition of xwexi (04.gramati/NN.*/default.spa.md, line)
+!!   [fr §N]     French learner grammar (Wikibooks French/Grammar, Francés/Gramática)
+!!
+!! Patterns match the French (source) lemma; clips read the Globasa (target) side unless /sl or /ref.
+
 !!!!!!!!!!!!!!!
 !! ATTRIBUTE CATEGORIES
 !!!!!!!!!!!!!!!
 
-number = (ND sg) sg pl sp ND;
-gender = (GD m) m f mf GD;
-det_type = def ind dem itg;
-tense = pres past fut ifi pri fti;
+gen_GLB = ut nt m f GD;
+number = sg pl;
+person = p1 p2 p3;
+reflex = ref;
+possessive = pos;
+
+! French verb forms, and the Globasa tense particle they map to
+tfra = pri pii ifi fti cni prs imp inf pp ger;
+tglb = pres past fut cni imp inf;
+aspect = impf perf pros imme;
+polarity = neg;
+! imparfait sense added by the French-side classifier (Phase 4); absent = state/background
+sense = hab prog;
+
+! Verbs taking être as perfect auxiliary: être + pp is passé composé, not passive [fr §4]
+etre_verbs = aller venir arriver partir rester naître mourir entrer sortir monter descendre tomber
+             retourner devenir revenir rentrer décéder parvenir survenir;
+! Clitics with no Globasa counterpart in these positions [xw 03:354-403, fr §3]
+drop_clitics = se y en;
+dative_clitics = lui leur;
+! French 3rd-person pronouns resolved by anaphora (on → ren is never switched)
+p3_anaphors = il le lui leur eux;
+rel_after_pr = qui lequel quoi;
+! Subject clitics that can follow the verb in inversion questions [fr §6]
+subj_clitics = je tu il nous vous on;
+! Comparative adverbs: plus/moins/aussi ADJ que → maxmo/minmo/denmo ADJ kom [xw 04:258]
+comp_adv = plus moins aussi;
+rel_contracted = auquel duquel;
 
 !!!!!!!!!!!!!!!
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
-n: _.gender.number;
-adj: _.gender.number;
-det_default: _.det_type;
-det_def: _.det_type.number;
+! Globasa is isolating: only the generator's required tags are output.
+n: _.gen_GLB;
+np: _.gen_GLB;
+adj: _;
+adv: _;
+preadv: _;
+pr: _;
+cnjcoo: _;
+cnjsub: _;
+cnjadv: _;
+num: _;
+ij: _;
+vblex: _;
+vbser: _;
+vbhaver: _;
+vbmod: _;
+pfx: _;
+rel: _;
+sent: _;
+cm: _;
+vbpr: _.tglb.aspect.polarity;
 
-NP: _.number;
+! prpers<prn><p3><ut><sg> → te; ke<prn><nt><sg> → keto; se<prn><ref>…; da<prn>
+! te or to follows the referent's Globasa gender: apertium-anaphora attaches the antecedent noun,
+! and an nt antecedent turns te/ete into to/oto (user decision; xw 05:50, 01:227).
+prn: (if (1.lem/sl in_caseless p3_anaphors and 1.person = p3 and 1.gen_GLB/ref = nt)
+         1(prn_out)[gen_GLB=nt]
+      else
+         1(prn_out));
+prn_out: _.reflex.person.gen_GLB.number;
+! Possessive determiners need person/gender/number (misu, tesu, imisu); others are bare (hin, ke, nil, moy)
+det: (if (1.possessive = pos and 1.person = p3 and 1.gen_GLB/ref = nt)
+         1(det_pos)[gen_GLB=nt]
+      elif (1.possessive = pos)
+         1(det_pos)
+      else
+         1(det_bare));
+det_pos: _.<pos>.person.gen_GLB.number;
+det_bare: _;
+
+! Nonterminals
+AJ: _;
+N1: _;
+DP: _;
+NOM: _;
+CL: _;
+CLS: _;
+CLE: _;
+VX: _.tfra.sense;
+VC: _.tglb.aspect.polarity;
+VP: _;
+REL: _;
+INF: _;
+Q: _;
+CND: _;
+CJ: _;
+SEQ: _;
 
 !!!!!!!!!!!!!!!
 !! TAG-REWRITE RULES
 !!!!!!!!!!!!!!!
 
-tense > tense : ifi past, pri pres, fti fut;
-
-!!!!!!!!!!!!!!!
-!! MACROS
-!!!!!!!!!!!!!!!
-
-det: (if (1.det_type = def or 1.det_type = ind)
-         1(det_def)
-      else
-         1(det_default));
+! Simple tenses [xw 08 table]: passé simple and imparfait → le; présent and subjonctif → no particle
+tfra > tglb : pri pres, prs pres, pii past, ifi past, fti fut, cni cni, imp imp, inf inf;
 
 !!!!!!!!!!!!!!!
 !! REDUCTION RULES
 !!!!!!!!!!!!!!!
 
-! Example rule:
-! Input:  ^ראש<n><m><sg>/hovud<n><nt><sg>$ ^גדול<adj><m><sg>/stor<adj><nt><sg>$
-! Output: ^stor<adj><nt><sg>$ ^hovud<n><nt><sg>$
-! NP -> n.$number adj { 2[gender=1.gender, number=1.number] _ 1 } ;
+!---------------------------------------------------------------------------------------------
+! Adjective phrase. Adjective-modifying adverbs precede (daymo day, maxmo day) [xw 01:474].
+! aussi ADJ que → denmo ADJ kom [xw 04:258]; que (cnjadv) → kom via the bidix.
+!---------------------------------------------------------------------------------------------
+AJ -> adj { 1 }
+    | adv adj { 1 _ 2 }
+    | preadv adj { 1 _ 2 }
+    | aussi@adv adj { denmo@adv _ 2 }
+    ! que after a comparative is "than" (kom), whichever way the tagger read it
+    | 3: [comp_adv]@adv adj que@cnjsub { (if (1.lem/sl = aussi) [denmo@adv] else [1]) _ 2 _ kom@cnjcoo }
+    | 3: [comp_adv]@adv adj que@cnjadv { (if (1.lem/sl = aussi) [denmo@adv] else [1]) _ 2 _ kom@cnjcoo }
+    ;
 
-! Resources:
-! https://wiki.apertium.org/wiki/Apertium-recursive
-! https://wiki.apertium.org/wiki/Apertium-recursive/Formalism
-! https://wiki.apertium.org/wiki/Apertium-recursive/Cookbook
+!---------------------------------------------------------------------------------------------
+! Noun phrase. No articles; no default un/plu [xw 01:267, 03:17-30].
+! All simple adjectives go before the noun [xw 01:463]; French puts most after it [fr §2].
+! When a sentence-initial article is deleted, its capital moves to the new first word.
+!---------------------------------------------------------------------------------------------
+N1 -> n { 1 }
+    | np { 1 }
+    | AJ N1 { 1 _ 2 }
+    | 2: N1 AJ { 2 _ 1 }
+    ;
+
+DP -> N1 { 1 }
+    | 5: le@det N1 { 2[lemcase=1.lemcase/sl] }
+    | 5: un@det N1 { 2[lemcase=1.lemcase/sl] }
+    | 6: le@det n { 2[lemcase=1.lemcase/sl] }
+    | 6: un@det n { 2[lemcase=1.lemcase/sl] }
+    | 7: le@det adj n { 2[lemcase=1.lemcase/sl] _ 3 }
+    | 7: le@det n adj { 3[lemcase=1.lemcase/sl] _ 2 }
+    | 7: un@det adj n { 2[lemcase=1.lemcase/sl] _ 3 }
+    | 7: un@det n adj { 3[lemcase=1.lemcase/sl] _ 2 }
+    ! Possessive / demonstrative / interrogative determiners stay: misu myaw, hin myaw [xw 09:47]
+    | 5: det N1 { 1 _ 2 }
+    ! Partitive du/de la/des, and de after negation: no Globasa marker [xw 10:393, fr §1]
+    | 3: de@pr le@det N1 { 3 }
+    | 3: de@pr le@det n { 3 }
+    | 1: de@pr n { 2 }
+    ! le mien → misu to: an NP must end in a noun or pronoun [xw 05:127, 09:96]
+    | 4: le@det prn.tn.pos { 2(det_pos) _ prpers@prn.p3.nt.sg }
+    | 3: prn.tn.pos { 1(det_pos) _ prpers@prn.p3.nt.sg }
+    ;
+
+NOM -> DP { 1 }
+     | prn.tn { 1 }
+     ! Possession N de N stays [xw 04:39]; outranks the partitive reading of "de le N"
+     | 8: NOM de@pr DP { 1 _ 2 _ 3 }
+     | 8: NOM de@pr le@det N1 { 1 _ 2 _ 4 }
+     ! à + recipient → tas; à + thing (Globasa nt) → fe [xw 10:231-247, 04:61]
+     | 6: à@pr le@det n { (if (3.gen_GLB = nt) [fe@pr] else [tas@pr]) _ 3 }
+     | 6: à@pr un@det n { (if (3.gen_GLB = nt) [fe@pr] else [tas@pr]) _ 3 }
+     | 6: à@pr det.pos n { (if (3.gen_GLB = nt) [fe@pr] else [tas@pr]) _ 2 _ 3 }
+     | 6: à@pr np { (if (2.gen_GLB = nt) [fe@pr] else [tas@pr]) _ 2 }
+     ! Partitive after a verb or negation (the article was already absorbed into DP)
+     | 2: de@pr DP { 2 }
+     ;
+
+!---------------------------------------------------------------------------------------------
+! Clitic pronouns come before the French verb (and before the auxiliary in compound tenses);
+! Globasa puts the object after the verb, indirect objects with tas [xw 10:231-247, fr §3].
+! se/y/en are dropped: pronominal verbs are intransitive in Globasa [xw 03:354-403].
+!---------------------------------------------------------------------------------------------
+CL -> prn.pro { (if (1.lem/sl in dative_clitics) [tas@pr _ 1] else [1]) }
+    ;
+CLE -> prn.enc { (if (1.lem/sl in dative_clitics) [tas@pr _ 1] else [1]) }
+     ! donne-le-moi: the pronoun after the direct object is the indirect object → tas
+     | prn.enc prn.enc { (if (1.lem/sl in dative_clitics) [tas@pr _ 1] else [1]) _ tas@pr _ 2 }
+     ;
+CLS -> CL { 1 }
+     | CL CLS { 1 _ 2 }
+     ;
+
+!---------------------------------------------------------------------------------------------
+! Finite verb with its proclitics. Output: verb, then object pronouns.
+!---------------------------------------------------------------------------------------------
+VX -> vblex.$tfra.$sense [$%vc=1.lemcase/sl] { 1[lemcase=aa] }
+    | vbser.$tfra.$sense [$%vc=1.lemcase/sl] { 1[lemcase=aa] }
+    | vbhaver.$tfra.$sense [$%vc=1.lemcase/sl] { 1[lemcase=aa] }
+    | vbmod.$tfra.$sense [$%vc=1.lemcase/sl] { 1[lemcase=aa] }
+    | CLS vblex.$tfra.$sense { 2 _ 1 }
+    | CLS vbser.$tfra.$sense { 2 _ 1 }
+    | CLS vbhaver.$tfra.$sense { 2 _ 1 }
+    | [drop_clitics]@prn vblex.$tfra.$sense { 2 }
+    | [drop_clitics]@prn vbser.$tfra.$sense { 2 }
+    | [drop_clitics]@prn vbhaver.$tfra.$sense { 2 }
+    | [drop_clitics]@prn CLS vblex.$tfra.$sense { 3 _ 2 }
+    | CLS [drop_clitics]@prn vblex.$tfra.$sense { 3 _ 1 }
+    ! Affirmative imperative: enclitics already follow the verb [fr §3]
+    | 2: vblex.imp.$tfra.$sense CLE [$%vc=1.lemcase/sl] { 1[lemcase=aa] _ 2 }
+    ;
+
+!---------------------------------------------------------------------------------------------
+! Compound tenses [xw 08:104-172, fr §4]. Auxiliary and participle are matched together:
+! the parser does not fork on reduce-reduce conflicts, so a one-token auxiliary rule would
+! lose to VX -> vbhaver. AUXP carries the auxiliary's French tense; VC maps it below.
+! être is the auxiliary only for etre_verbs and pronominal verbs; otherwise être + pp is passive.
+!---------------------------------------------------------------------------------------------
+AUXP -> avoir@vbhaver.$tfra vblex.pp [$polarity=""] { 2 }
+      | CLS avoir@vbhaver.$tfra vblex.pp [$polarity=""] { 3 _ 1 }
+      | ne@adv avoir@vbhaver.$tfra pas@adv vblex.pp [$polarity=neg] { 4 }
+      | ne@adv CLS avoir@vbhaver.$tfra pas@adv vblex.pp [$polarity=neg] { 5 _ 2 }
+      | ne@adv avoir@vbhaver.$tfra jamais@adv vblex.pp [$polarity=""] { 3 _ 4 }
+      | ne@adv avoir@vbhaver.$tfra rien@prn vblex.pp [$polarity=""] { 4 _ 3 }
+      | ne@adv avoir@vbhaver.$tfra vblex.pp personne@prn [$polarity=""] { 3 _ 4 }
+      | ne@adv avoir@vbhaver.$tfra plus@adv vblex.pp [$polarity=""] { no@adv _ haji@adv _ 4 }
+      | 6: être@vbser.$tfra [etre_verbs]@vblex.pp [$polarity=""] { 2 }
+      | 6: ne@adv être@vbser.$tfra pas@adv [etre_verbs]@vblex.pp [$polarity=neg] { 4 }
+      | 6: [drop_clitics]@prn être@vbser.$tfra vblex.pp [$polarity=""] { 3 }
+      ! Compound passive: a été mangé (par) → le be-yam
+      | 5: avoir@vbhaver.$tfra être@vbser.pp vblex.pp [$polarity=""] { be@pfx 3 }
+      | 6: avoir@vbhaver.$tfra être@vbser.pp vblex.pp par@pr [$polarity=""] { be@pfx 3 }
+      ;
+AUXP: _.tfra.polarity;
+
+!---------------------------------------------------------------------------------------------
+! Verb complex: tense/aspect/polarity as chunk attributes, content = (pre-adverb) verb (objects)
+!---------------------------------------------------------------------------------------------
+VC -> VX [$tglb=1.tfra>tglb, $aspect="", $polarity=""] { 1 }
+    ! imparfait sense from the classifier: habitual → le du-V, progressive → le nun V [xw 08:56,114]
+    | 2: VX.pii.hab [$tglb=past, $aspect="", $polarity=""] { du@pfx 1 }
+    | 2: VX.pii.prog [$tglb=past, $aspect=impf, $polarity=""] { 1 }
+
+    ! Negation: ne … pas → no after the tense particle [xw 01:371]; spoken "pas" alone [fr §5]
+    | 3: ne@adv VX pas@adv [$tglb=2.tfra>tglb, $polarity=neg, $aspect="", $%vc=1.lemcase/sl] { 2 }
+    | 2: VX pas@adv [$tglb=1.tfra>tglb, $polarity=neg, $aspect=""] { 1 }
+    ! Negative words replace no [xw 04:292, 01:554-636]
+    | 3: ne@adv VX jamais@adv [$tglb=2.tfra>tglb, $aspect="", $polarity="", $%vc=1.lemcase/sl] { 3 _ 2 }
+    | 3: ne@adv VX plus\ jamais@adv [$tglb=2.tfra>tglb, $aspect="", $polarity="", $%vc=1.lemcase/sl] { 3 _ 2 }
+    | 3: ne@adv VX rien@prn [$tglb=2.tfra>tglb, $aspect="", $polarity="", $%vc=1.lemcase/sl] { 2 _ 3 }
+    | 3: ne@adv VX personne@prn [$tglb=2.tfra>tglb, $aspect="", $polarity="", $%vc=1.lemcase/sl] { 2 _ 3 }
+    ! ne … plus = no longer → no haji [xw 04:177]
+    | 3: ne@adv VX plus@adv [$tglb=2.tfra>tglb, $aspect="", $polarity="", $%vc=1.lemcase/sl] { no@adv _ haji@adv _ 2 }
+    ! ne … que = only → sol [xw 09:275, fr §5]
+    | 3: ne@adv VX que@cnjsub [$tglb=2.tfra>tglb, $aspect="", $polarity="", $%vc=1.lemcase/sl] { 2 _ sol@adv }
+    | 3: ne@adv VX que@cnjadv [$tglb=2.tfra>tglb, $aspect="", $polarity="", $%vc=1.lemcase/sl] { 2 _ sol@adv }
+    ! Expletive ne (craindre que, avant que, comparisons) is not negation [fr §4-5]
+    | 1: ne@adv VX [$tglb=2.tfra>tglb, $aspect="", $polarity="", $%vc=1.lemcase/sl] { 2 }
+
+    ! Compound tenses: plus-que-parfait / passé antérieur → le le, futur antérieur → xa le,
+    ! conditionnel passé → ger le, subjonctif passé → le.
+    ! Passé composé has a build-time switch (Makefile compiles this file twice with rtx-comp -e):
+    !   "pc_past" → le     (simple past; mode fra-glb, the default)        [xw 08:55]
+    !   "pc_perf" → nun le (present perfect; mode fra-glb_perf)            [xw 08:104]
+    | "pc_past" 4: AUXP.pri [$tglb=past, $aspect="", $polarity=1.polarity] { 1 }
+    | "pc_perf" 4: AUXP.pri [$tglb=pres, $aspect=perf, $polarity=1.polarity] { 1 }
+    | 4: AUXP.prs [$tglb=past, $aspect="", $polarity=1.polarity] { 1 }
+    | 4: AUXP.pii [$tglb=past, $aspect=perf, $polarity=1.polarity] { 1 }
+    | 4: AUXP.ifi [$tglb=past, $aspect=perf, $polarity=1.polarity] { 1 }
+    | 4: AUXP.fti [$tglb=fut, $aspect=perf, $polarity=1.polarity] { 1 }
+    | 4: AUXP.cni [$tglb=cni, $aspect=perf, $polarity=1.polarity] { 1 }
+
+    ! Passive: be- + verb, tense from être, agent par/de dropped → bare object [xw 08:194-199, fr §8]
+    | 3: être@vbser vblex.pp [$tglb=1.tfra>tglb, $aspect="", $polarity=""] { be@pfx 2 }
+    | 4: être@vbser vblex.pp par@pr [$tglb=1.tfra>tglb, $aspect="", $polarity=""] { be@pfx 2 }
+    | 4: ne@adv être@vbser pas@adv vblex.pp [$tglb=2.tfra>tglb, $polarity=neg, $aspect="", $%vc=1.lemcase/sl] { be@pfx 4 }
+    ! Periphrastic tenses [xw 08:77-127, fr §4]
+    ! aller + inf (futur proche) → nun xa / le xa
+    | 6: aller@vblex.pri vblex.inf [$tglb=pres, $aspect=pros, $polarity=""] { 2 }
+    | 6: aller@vblex.pii vblex.inf [$tglb=past, $aspect=pros, $polarity=""] { 2 }
+    | 7: aller@vblex.pri CLS vblex.inf [$tglb=pres, $aspect=pros, $polarity=""] { 3 _ 2 }
+    | 7: aller@vblex.pii CLS vblex.inf [$tglb=past, $aspect=pros, $polarity=""] { 3 _ 2 }
+    ! venir de + inf (passé récent) → jale
+    | 6: venir@vblex.pri de@pr vblex.inf [$tglb=past, $aspect=imme, $polarity=""] { 3 }
+    ! être en train de + inf → nun nun / le nun
+    | 6: être@vbser.pri en\ train\ de@pr vblex.inf [$tglb=pres, $aspect=impf, $polarity=""] { 3 }
+    | 6: être@vbser.pii en\ train\ de@pr vblex.inf [$tglb=past, $aspect=impf, $polarity=""] { 3 }
+
+    ! Verb + infinitive: modals and catenatives take na (optional after abil/musi) [xw 01:452-454, 03:217]
+    | 3: VX INF [$tglb=1.tfra>tglb, $aspect="", $polarity=""] { 1 _ 2 }
+    | 4: ne@adv VX pas@adv INF [$tglb=2.tfra>tglb, $polarity=neg, $aspect="", $%vc=1.lemcase/sl] { 2 _ 4 }
+    ;
+
+! Infinitive phrases: na V; linking à/de before an infinitive also → na [fr §12]
+INF -> vblex.inf { u@vbpr.inf _ 1 }
+     | CLS vblex.inf { u@vbpr.inf _ 2 _ 1 }
+     | 2: à@pr vblex.inf { u@vbpr.inf _ 2 }
+     | 2: de@pr vblex.inf { u@vbpr.inf _ 2 }
+     ! pour + inf → cel na; sans + inf → nenyon na; avant de + inf → lefe na [xw 04:157-224]
+     | 3: pour@pr vblex.inf { cel@pr _ u@vbpr.inf _ 2 }
+     | 3: sans@pr vblex.inf { nenyon@pr _ u@vbpr.inf _ 2 }
+     | 3: avant\ de@pr vblex.inf { lefe@pr _ u@vbpr.inf _ 2 }
+     ;
+
+!---------------------------------------------------------------------------------------------
+! Verb phrase: one tense particle before the verb [xw 08].
+! Present: no particle (nun is optional); present negative: bare no.
+!---------------------------------------------------------------------------------------------
+VP -> VC { (if (1.tglb = pres and 1.aspect = "")
+                (if (1.polarity = neg) [no@adv[lemcase=$%vc] _ 1] else [1])
+            elif (1.tglb = "")
+                [1]
+            else
+                [u@vbpr.[1.tglb].[1.aspect].[1.polarity][lemcase=$%vc] _ 1]) }
+    | 5: il\ y\ a@vblex { 1 }
+    ! il faut V / il faut que … → hay haja (na V / ki …); the infinitive's own VP supplies "na V"
+    | 6: il@prn falloir@vbmod { hay@vblex[lemcase=1.lemcase/sl] _ haja@n.nt }
+    | 5: il@prn y@prn avoir@vbhaver { (if (3.tfra = pii or 3.tfra = ifi) [u@vbpr.past[lemcase=1.lemcase/sl] _ hay@vblex]
+    elif (3.tfra = fti) [u@vbpr.fut[lemcase=1.lemcase/sl] _ hay@vblex]
+    elif (3.tfra = cni) [u@vbpr.cni[lemcase=1.lemcase/sl] _ hay@vblex]
+    else [hay@vblex[lemcase=1.lemcase/sl]]) }
+    ;
+
+
+
+!---------------------------------------------------------------------------------------------
+! Questions: no inversion in Globasa; yes/no questions start with kam [xw 01:718-729].
+! est-ce que → kam via the bidix. Inversion V-tu / V-t-il → kam S V [fr §6].
+! Wh-word + inversion → S V … wh (wh in situ) [xw 06:251-268].
+!---------------------------------------------------------------------------------------------
+Q -> 3: VP [subj_clitics]@prn.tn { kam@cnjcoo[lemcase=$%vc] _ 2 _ 1 }
+   | 4: adv.itg VP [subj_clitics]@prn.tn { 3[lemcase=1.lemcase/sl] _ 2 _ 1[lemcase=aa] }
+   ! est-ce que is one analyser unit; its French tags must not reach the generator
+   | 2: est-ce\ que@prn { kam@cnjcoo[lemcase=1.lemcase/sl] }
+   ! qu'est-ce que S V → S V keto (wh in situ) [xw 01:739]
+   | 4: qu'est-ce\ que@prn NOM VP { 2 _ 3 _ ke@prn.nt.sg }
+   ;
+
+!---------------------------------------------------------------------------------------------
+! Relative clauses: hu + resumptive da in the gap [xw 09:303-452, fr §7].
+! REL is not attached to its antecedent NOM: Globasa keeps the clause right after the noun, as
+! French does, and attaching it made the parser discard the whole-sentence branch.
+!   qui V → hu da V; que S V → hu S V da; prep lequel S V → hu S V prep da;
+!   dont S V → hu S V de da; où S V → hu denloka S V
+!---------------------------------------------------------------------------------------------
+REL -> qui@rel VP { hu@cnjsub _ 1 _ 2 }
+     | que@rel NOM VP { hu@cnjsub _ 2 _ 3 _ 1 }
+     | pr [rel_after_pr]@rel NOM VP { hu@cnjsub _ 3 _ 4 _ 1 _ 2 }
+     | [rel_contracted]@rel NOM VP { hu@cnjsub _ 2 _ 3 _ 1 }
+     | dont@rel NOM VP { hu@cnjsub _ 2 _ 3 _ de@pr _ 1 }
+     | où@rel NOM VP { hu@cnjsub _ 1 _ 2 _ 3 }
+     ;
+
+!---------------------------------------------------------------------------------------------
+! Unreal condition: si + imparfait → eger + bare verb (no le), main clause in ger
+! [xw 08:176 "Mi ger yam pingo eger mi sen yamkal", fr §4 si-clauses]
+!---------------------------------------------------------------------------------------------
+CND -> si@cnjadv NOM VX.pii { 1 _ 2 _ 3 }
+     | si@cnjadv NOM ne@adv VX.pii pas@adv { 1 _ 2 _ no@adv _ 4 }
+     ;
+
+! Conjunctions whose Globasa equivalent is two words: quand → denwatu hu [xw 01:843]
+CJ -> quand@cnjadv { denwatu@adv[lemcase=1.lemcase/sl] _ hu@cnjsub }
+    ;
+
+!---------------------------------------------------------------------------------------------
+! Sentence sequence. The rtx parser keeps branches that can still accept input and drops
+! finished ones whose top constituent begins no rule, so complete constituents (REL, VP, NOM…)
+! lost to fragmentary parses. SEQ lets every finished constituent chain onward.
+!---------------------------------------------------------------------------------------------
+SEQ -> NOM { 1 }
+     | VP { 1 }
+     | REL { 1 }
+     | AJ { 1 }
+     | Q { 1 }
+     | INF { 1 }
+     | CND { 1 }
+     | CJ { 1 }
+     | SEQ CND { 1 _ 2 }
+     | SEQ CJ { 1 _ 2 }
+     | SEQ NOM { 1 _ 2 }
+     | SEQ VP { 1 _ 2 }
+     | SEQ REL { 1 _ 2 }
+     | SEQ AJ { 1 _ 2 }
+     | SEQ Q { 1 _ 2 }
+     | SEQ INF { 1 _ 2 }
+     ;
+
+! Tokens no rule consumes are still formatted by their output pattern above, so no
+! catch-all rules are needed. (Catch-alls like X -> adv also broke longer parses.)

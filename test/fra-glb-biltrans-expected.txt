@@ -1,0 +1,134 @@
+[06XMk58KVm9o#0] ^Notre<det><pos><mf><sg>/Prpers<det><pos><p1><ut><pl><mf><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$ ^dormir<vblex><pri><p3><sg>/somno<vblex><pri><p3><sg>$^.<sent>/.<sent>$
+[/06XMk58KVm9o]
+[1S1nbIZPmX4n#0] ^Il<prn><tn><p3><f><sg>/Prpers<prn><p3><ut><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^partir<vblex><pp><f><sg>/awidi<vblex><pp><f><sg>$ ^avant de<pr>/lefe<pr>$ ^manger<vblex><inf>/yam<vblex><inf>$^.<sent>/.<sent>$
+[/1S1nbIZPmX4n]
+[1xhMGZ54Qg-3#0] ^Le<det><def><f><sg>/<det><f><sg>$ ^femme<n><f><sg>/femixu<n><f><sg>$ ^que<rel><mf><sp>/da<prn><mf><sp>$ ^je<prn><tn><p1><mf><sg>/prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^aimer<vblex><pri><p1><sg>/lubi<vblex><pri><p1><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^jeune<adj><mf><sg>/juni<adj><mf><sg>$^.<sent>/.<sent>$
+[/1xhMGZ54Qg-3]
+[2_2qnUtRdS3Y#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^avoir<vbhaver><cni><p1><sg>/hare<vblex><cni><p1><sg>$ ^manger<vblex><pp><m><sg>/yam<vblex><pp><m><sg>$^.<sent>/.<sent>$
+[/2_2qnUtRdS3Y]
+[3YS4Qi2UkrOc#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^poisson<n><m><sg>/mahi<n><ut><sg>$ ^avoir<vbhaver><pri><p3><sg>/hare<vblex><pri><p3><sg>$ ^être<vbser><pp><mf><sp>/sen<vblex><pp><mf><sp>$ ^manger<vblex><pp><m><sg>/yam<vblex><pp><m><sg>$ ^par<pr>/fal<pr>$ ^le<det><def><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$^.<sent>/.<sent>$
+[/3YS4Qi2UkrOc]
+[4F8W9b2TDKP0#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$ ^dormir<vblex><pri><p3><sg>/somno<vblex><pri><p3><sg>$^.<sent>/.<sent>$ ^Il<prn><tn><p3><m><sg>/Prpers<prn><p3><ut><sg>$ ^manger<vblex><pri><p3><sg>/yam<vblex><pri><p3><sg>$^.<sent>/.<sent>$
+[/4F8W9b2TDKP0]
+[6-5G--4HfEfQ#0] ^Manger<vblex><pri><p2><sg>/Yam<vblex><pri><p2><sg>$^tu<prn><tn><p2><mf><sg>/prpers<prn><p2><ut><sg><tn><p2><mf><sg>$ ^de<pr>/de<pr>$ ^le<det><def><m><sg>/<det><m><sg>$ ^poisson<n><m><sg>/mahi<n><ut><sg>$ ^?<sent>/?<sent>$
+[/6-5G--4HfEfQ]
+[7o4HgZkIcvaJ#0] ^Mon<det><pos><m><sg>/Prpers<det><pos><p1><ut><sg><m><sg>$ ^ami<n><m><sg>/doste<n><ut><m><sg>/mandoste<n><m><m><sg>$ ^parler<vblex><pri><p3><sg>/pala<vblex><pri><p3><sg>$ ^avec<pr>/ton<pr>/yon<pr>/har<pr>$ ^le<det><def><f><sg>/<det><f><sg>$ ^femme<n><f><sg>/femixu<n><f><sg>$^.<sent>/.<sent>$
+[/7o4HgZkIcvaJ]
+[8qQCZ75mmVFx#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^ne<adv>/no<adv>$ ^avoir<vblex><pri><p1><sg>/hare<vblex><pri><p1><sg>$ ^que<cnjsub>/ki<cnjsub>$ ^de<pr>/de<pr>$ ^le<det><def><m><sg>/<det><m><sg>$ ^pain<n><m><sg>/roti<n><nt><m><sg>$^.<sent>/.<sent>$
+[/8qQCZ75mmVFx]
+[8ws-EzPPnWyP#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^manger<vblex><pii><hab><p1><sg>/yam<vblex><pii><hab><p1><sg>$ ^souvent<adv>/pimpan<adv>$ ^de<pr>/de<pr>$ ^le<det><def><mf><pl>/<det><mf><pl>$ ^pomme<n><f><pl>/pingo<n><ut><f><pl>/pingo<n><nt><f><pl>$^.<sent>/.<sent>$
+[/8ws-EzPPnWyP]
+[9BeEmAjXLpO7#0] ^Il<prn><tn><p3><m><sg>/Prpers<prn><p3><ut><sg>$ ^me<prn><pro><p1><mf><sg>/prpers<prn><p1><ut><sg><pro><p1><mf><sg>$ ^voir<vblex><pri><p3><sg>/oko<vblex><pri><p3><sg>$^.<sent>/.<sent>$
+[/9BeEmAjXLpO7]
+[9CPwBUzTUSvV#0] ^Quand<rel><adv>/Denwatu<adv>$ ^je<prn><tn><p1><mf><sg>/prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^être<vbser><pii><p1><sg>/sen<vblex><pii><p1><sg>$ ^jeune<adj><mf><sg>/juni<adj><mf><sg>$^,<cm>/,<cm>$ ^je<prn><tn><p1><mf><sg>/prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^jouer<vblex><pii><hab><p1><sg>/yuxi<vblex><pii><hab><p1><sg>$ ^à<pr>/fe<pr>$ ^le<det><def><m><sg>/<det><m><sg>$ ^football<n><m><sg>/pedabol<n><nt><m><sg>$^.<sent>/.<sent>$
+[/9CPwBUzTUSvV]
+[9m4y5jQmhN5k#0] ^Si<cnjadv>/Eger<cnjsub>$ ^je<prn><tn><p1><mf><sg>/prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^ne<adv>/no<adv>$ ^manger<vblex><pii><p1><sg>/yam<vblex><pii><p1><sg>$ ^pas<adv>/no<adv>$^,<cm>/,<cm>$ ^je<prn><tn><p1><mf><sg>/prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^mourir<vblex><cni><p1><sg>/morcu<vblex><cni><p1><sg>$^.<sent>/.<sent>$
+[/9m4y5jQmhN5k]
+[ASBrivn4j1bo#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^avoir<vbhaver><pri><p1><sg>/hare<vblex><pri><p1><sg>$ ^manger<vblex><pp><m><sg>/yam<vblex><pp><m><sg>$^.<sent>/.<sent>$
+[/ASBrivn4j1bo]
+[CebvqVtsXmaa#0] ^Est-ce que<prn><itg><mf><sg>/Kam<cnjcoo><mf><sg>$ ^tu<prn><tn><p2><mf><sg>/prpers<prn><p2><ut><sg><tn><p2><mf><sg>$ ^manger<vblex><pri><p2><sg>/yam<vblex><pri><p2><sg>$ ^de<pr>/de<pr>$ ^le<det><def><m><sg>/<det><m><sg>$ ^poisson<n><m><sg>/mahi<n><ut><sg>$ ^?<sent>/?<sent>$
+[/CebvqVtsXmaa]
+[DcSHGk-D2jKz#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^pouvoir<vbmod><pri><p1><sg>/abil<vbmod><pri><p1><sg>$ ^manger<vblex><inf>/yam<vblex><inf>$^.<sent>/.<sent>$
+[/DcSHGk-D2jKz]
+[FXykQlIeGkDz#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^lui<prn><pro><p3><mf><sg>/prpers<prn><p3><ut><sg><p3><mf><sg>$ ^donner<vblex><pri><p1><sg>/gibe<vblex><pri><p1><sg>$ ^le<det><def><m><sg>/<det><m><sg>$ ^livre<n><m><sg>/pondu<n><nt><m><sg>/pawndu<n><nt><m><sg>/kitabu<n><nt><m><sg>$^.<sent>/.<sent>$
+[/FXykQlIeGkDz]
+[GJOxPFnrCNl5#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$ ^de<pr>/de<pr>$ ^Marie<np><ant><f><sg>/Maria<np><ut><ant><f><sg>$ ^dormir<vblex><pri><p3><sg>/somno<vblex><pri><p3><sg>$^.<sent>/.<sent>$
+[/GJOxPFnrCNl5]
+[GrhRc6rpeVfh#0] ^Où<adv><itg>/Keloka<adv>$ ^aller<vblex><pri><p2><sg>/idi<vblex><pri><p2><sg>$^tu<prn><tn><p2><mf><sg>/prpers<prn><p2><ut><sg><tn><p2><mf><sg>$ ^?<sent>/?<sent>$
+[/GrhRc6rpeVfh]
+[Hg32pmTID6qx#0] ^Le<det><def><f><sg>/<det><f><sg>$ ^maison<n><f><sg>/baytu<n><nt><f><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^grand<adj><f><sg>/day<adj><f><sg>$^.<sent>/.<sent>$ ^Son<det><pos><f><sg>/Prpers<det><pos><p3><ut><sg><f><sg>$ ^porte<n><f><sg>/dwer<n><nt><f><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^jaune<adj><mf><sg>/jalo<adj><mf><sg>$^.<sent>/.<sent>$
+[/Hg32pmTID6qx]
+[HnQhKPRu6Qnr#0] ^Il y a<vblex><pri><p3><sg>/Hay<vblex><pri><p3><sg>$ ^beaucoup de<det><ind><mf><sp>/multi<adj><ind><mf><sp>$ ^livre<n><m><pl>/pondu<n><nt><m><pl>/pawndu<n><nt><m><pl>/kitabu<n><nt><m><pl>$^.<sent>/.<sent>$
+[/HnQhKPRu6Qnr]
+[I7GiadlVTEgV#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$ ^manger<vblex><pri><p3><sg>/yam<vblex><pri><p3><sg>$ ^le<det><def><f><sg>/<det><f><sg>$ ^souris<n><f><sp>/maux<n><nt><f><sp>/maux<n><ut><f><sp>$^.<sent>/.<sent>$
+[/I7GiadlVTEgV]
+[Lt3azSSZ5nkr#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$ ^jaune<adj><mf><sg>/jalo<adj><mf><sg>$ ^dormir<vblex><pri><p3><sg>/somno<vblex><pri><p3><sg>$^.<sent>/.<sent>$
+[/Lt3azSSZ5nkr]
+[MiwweYvNApjs#0] ^Il<prn><tn><p3><m><sg>/Prpers<prn><p3><ut><sg>$ ^ne<adv>/no<adv>$ ^manger<vblex><pri><p3><sg>/yam<vblex><pri><p3><sg>$ ^plus<adv>/maxmo<adv>$ ^de<pr>/de<pr>$ ^poisson<n><m><sg>/mahi<n><ut><sg>$^.<sent>/.<sent>$
+[/MiwweYvNApjs]
+[OSWId07qoQop#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^garçon<n><m><sg>/manyen<n><m><m><sg>/mannini<n><m><m><sg>$ ^avoir<vbhaver><pri><p3><sg>/hare<vblex><pri><p3><sg>$ ^donner<vblex><pp><m><sg>/gibe<vblex><pp><m><sg>$ ^le<det><def><m><sg>/<det><m><sg>$ ^livre<n><m><sg>/pondu<n><nt><m><sg>/pawndu<n><nt><m><sg>/kitabu<n><nt><m><sg>$ ^à<pr>/fe<pr>$ ^son<det><pos><f><sg>/prpers<det><pos><p3><ut><sg><f><sg>$ ^mère<n><f><sg>/matre<n><GD><sg>$^.<sent>/.<sent>$
+[/OSWId07qoQop]
+[PJHhGpHMoJC9#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^manger<vblex><pii><prog><p1><sg>/yam<vblex><pii><prog><p1><sg>$^.<sent>/.<sent>$
+[/PJHhGpHMoJC9]
+[QU9WIJrQDLzS#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^ne<adv>/no<adv>$ ^voir<vblex><pri><p1><sg>/oko<vblex><pri><p1><sg>$ ^personne<prn><tn><mf><sg>/nil<prn><ut><sg><tn><mf><sg>$^.<sent>/.<sent>$
+[/QU9WIJrQDLzS]
+[QW9MqWqkZk7O#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^ne<adv>/no<adv>$ ^manger<vblex><pri><p1><sg>/yam<vblex><pri><p1><sg>$ ^jamais<adv>/nilwatu<adv>$^.<sent>/.<sent>$
+[/QW9MqWqkZk7O]
+[SI50MSzET6_5#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^avoir<vbhaver><fti><p1><sg>/hare<vblex><fti><p1><sg>$ ^manger<vblex><pp><m><sg>/yam<vblex><pp><m><sg>$^.<sent>/.<sent>$
+[/SI50MSzET6_5]
+[SOh02aE5eG9s#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^venir<vblex><pri><p1><sg>/ata<vblex><pri><p1><sg>$ ^de<pr>/de<pr>$ ^manger<vblex><inf>/yam<vblex><inf>$^.<sent>/.<sent>$
+[/SOh02aE5eG9s]
+[Sgh0fvlZdzy5#0] ^Il<prn><tn><p3><m><sg>/Prpers<prn><p3><ut><sg>$ ^falloir<vbmod><pri><p3><sg>/musi<vbmod><pri><p3><sg>$ ^manger<vblex><inf>/yam<vblex><inf>$^.<sent>/.<sent>$
+[/Sgh0fvlZdzy5]
+[THqyA29SuBC0#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$ ^manger<vblex><pri><p3><sg>/yam<vblex><pri><p3><sg>$ ^le<det><def><m><sg>/<det><m><sg>$ ^poisson<n><m><sg>/mahi<n><ut><sg>$^.<sent>/.<sent>$
+[/THqyA29SuBC0]
+[WA7IM9JSKC5y#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^manger<vblex><pri><p1><sg>/yam<vblex><pri><p1><sg>$ ^pour<pr>/tas<pr>$ ^vivre<vblex><inf>/jiwa<vblex><inf>$^.<sent>/.<sent>$
+[/WA7IM9JSKC5y]
+[WXI0rmMD_LyK#0] ^Il y a<vblex><pri><p3><sg>/Hay<vblex><pri><p3><sg>$ ^un<det><ind><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$^.<sent>/.<sent>$
+[/WXI0rmMD_LyK]
+[WpwL9XYipKDF#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^poisson<n><m><sg>/mahi<n><ut><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^manger<vblex><pp><m><sg>/yam<vblex><pp><m><sg>$ ^par<pr>/fal<pr>$ ^le<det><def><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$^.<sent>/.<sent>$
+[/WpwL9XYipKDF]
+[X4NgEoDQaVsx#0] ^On<prn><tn><p3><mf><sg>/Ren<prn><p3><ut><sg><tn><p3><mf><sg>$ ^manger<vblex><pri><p3><sg>/yam<vblex><pri><p3><sg>$^.<sent>/.<sent>$
+[/X4NgEoDQaVsx]
+[XVvt9XMY-260#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^avoir<vbhaver><pii><p1><sg>/hare<vblex><pii><p1><sg>$ ^manger<vblex><pp><m><sg>/yam<vblex><pp><m><sg>$^.<sent>/.<sent>$
+[/XVvt9XMY-260]
+[a1ZiKA1EDV_S#0] ^Manger<vblex><imp><p2><sg>/Yam<vblex><imp><p2><sg>$ ^!<sent>/!<sent>$
+[/a1ZiKA1EDV_S]
+[cResI_VKRnVe#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^dormir<vblex><pii><prog><p1><sg>/somno<vblex><pii><prog><p1><sg>$ ^quand<cnjadv>/denwatu hu<cnjsub>$ ^tu<prn><tn><p2><mf><sg>/prpers<prn><p2><ut><sg><tn><p2><mf><sg>$ ^être<vbser><pri><p2><sg>/sen<vblex><pri><p2><sg>$ ^venir<vblex><pp><m><sg>/ata<vblex><pp><m><sg>$^.<sent>/.<sent>$
+[/cResI_VKRnVe]
+[fKThR834nVCk#0] ^Le<det><def><f><sg>/<det><f><sg>$ ^table<n><f><sg>/mesa<n><nt><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^grand<adj><f><sg>/day<adj><f><sg>$^.<sent>/.<sent>$ ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^le<prn><pro><p3><f><sg>/prpers<prn><p3><ut><sg><sg>$ ^voir<vblex><pri><p1><sg>/oko<vblex><pri><p1><sg>$^.<sent>/.<sent>$
+[/fKThR834nVCk]
+[g2yIBzAZoPKt#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^aller<vblex><pri><p1><sg>/idi<vblex><pri><p1><sg>$ ^le<prn><pro><p3><nt>/prpers<prn><p3><nt><sg>$ ^voir<vblex><inf>/oko<vblex><inf>$^.<sent>/.<sent>$
+[/g2yIBzAZoPKt]
+[g4GhQTA0DLcm#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^vouloir<vbmod><pri><p1><sg>/vole<vblex><pri><p1><sg>$ ^manger<vblex><inf>/yam<vblex><inf>$^.<sent>/.<sent>$
+[/g4GhQTA0DLcm]
+[gi5C1AFj9BBb#0] ^Si<cnjadv>/Eger<cnjsub>$ ^je<prn><tn><p1><mf><sg>/prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^manger<vblex><pri><p1><sg>/yam<vblex><pri><p1><sg>$^,<cm>/,<cm>$ ^je<prn><tn><p1><mf><sg>/prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^dormir<vblex><pri><p1><sg>/somno<vblex><pri><p1><sg>$^.<sent>/.<sent>$
+[/gi5C1AFj9BBb]
+[h_C2MWWieY8T#0] ^Mon<det><pos><m><sg>/Prpers<det><pos><p1><ut><sg><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$ ^dormir<vblex><pri><p3><sg>/somno<vblex><pri><p3><sg>$^.<sent>/.<sent>$
+[/h_C2MWWieY8T]
+[jcm-bWfTAJ9s#0] ^Si<cnjadv>/Eger<cnjsub>$ ^je<prn><tn><p1><mf><sg>/prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^manger<vblex><pii><prog><p1><sg>/yam<vblex><pii><prog><p1><sg>$^,<cm>/,<cm>$ ^je<prn><tn><p1><mf><sg>/prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^dormir<vblex><cni><p1><sg>/somno<vblex><cni><p1><sg>$^.<sent>/.<sent>$
+[/jcm-bWfTAJ9s]
+[kEWMk3g7uXEi#0] ^Tu<prn><tn><p2><mf><sg>/Prpers<prn><p2><ut><sg><tn><p2><mf><sg>$ ^manger<vblex><cni><p2><sg>/yam<vblex><cni><p2><sg>$^.<sent>/.<sent>$
+[/kEWMk3g7uXEi]
+[ljysJDNmGHXI#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^ne<adv>/no<adv>$ ^avoir<vbhaver><pri><p1><sg>/hare<vblex><pri><p1><sg>$ ^pas<adv>/no<adv>$ ^manger<vblex><pp><m><sg>/yam<vblex><pp><m><sg>$^.<sent>/.<sent>$
+[/ljysJDNmGHXI]
+[lxsq3Lz7Kw_X#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^aimer<vblex><pri><p1><sg>/lubi<vblex><pri><p1><sg>$ ^le<det><def><m><sg>/<det><m><sg>$ ^poisson<n><m><sg>/mahi<n><ut><sg>$ ^que<rel><mf><sp>/da<prn><mf><sp>$ ^je<prn><tn><p1><mf><sg>/prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^manger<vblex><pri><p1><sg>/yam<vblex><pri><p1><sg>$^.<sent>/.<sent>$
+[/lxsq3Lz7Kw_X]
+[oTDLaDZaHf1b#0] ^Le<det><def><mf><pl>/<det><mf><pl>$ ^chat<n><m><pl>/myaw<n><ut><pl>$ ^manger<vblex><pri><p3><pl>/yam<vblex><pri><p3><pl>$^.<sent>/.<sent>$
+[/oTDLaDZaHf1b]
+[oUeQ3XktyqnM#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^petit<adj><m><sg>/lil<adj><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$ ^dormir<vblex><pri><p3><sg>/somno<vblex><pri><p3><sg>$^.<sent>/.<sent>$
+[/oUeQ3XktyqnM]
+[oeJqKQzBNXj5#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^ne<adv>/no<adv>$ ^manger<vblex><pri><p1><sg>/yam<vblex><pri><p1><sg>$ ^rien<prn><tn><nt>/nil<prn><nt><sg><tn><nt>$^.<sent>/.<sent>$
+[/oeJqKQzBNXj5]
+[ogh9tgl-ZqRX#0] ^Le<det><def><mf><pl>/<det><mf><pl>$ ^chat<n><m><pl>/myaw<n><ut><pl>$ ^dormir<vblex><pri><p3><pl>/somno<vblex><pri><p3><pl>$^.<sent>/.<sent>$ ^Il<prn><tn><p3><m><pl>/Prpers<prn><p3><ut><pl>$ ^manger<vblex><pri><p3><pl>/yam<vblex><pri><p3><pl>$^.<sent>/.<sent>$
+[/ogh9tgl-ZqRX]
+[p4aP_OarVSPN#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^aller<vblex><pri><p1><sg>/idi<vblex><pri><p1><sg>$ ^manger<vblex><inf>/yam<vblex><inf>$^.<sent>/.<sent>$
+[/p4aP_OarVSPN]
+[qPPtL5wywMD-#0] ^Nous<prn><tn><p1><mf><pl>/Prpers<prn><p1><ut><pl><tn><p1><mf><pl>$ ^manger<vblex><fti><p1><pl>/yam<vblex><fti><p1><pl>$ ^demain<n><m><sg>/xadin<n><nt><m><sg>/jaxadin<n><nt><m><sg>$^.<sent>/.<sent>$
+[/qPPtL5wywMD-]
+[qvf9oC8lwILW#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^ne<adv>/no<adv>$ ^manger<vblex><pri><p1><sg>/yam<vblex><pri><p1><sg>$ ^pas<adv>/no<adv>$ ^le<det><def><m><sg>/<det><m><sg>$ ^poisson<n><m><sg>/mahi<n><ut><sg>$^.<sent>/.<sent>$
+[/qvf9oC8lwILW]
+[rC-HfjSfSHYE#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^être<vbser><pii><p1><sg>/sen<vblex><pii><p1><sg>$ ^malade<n><mf><sg>/bimaryen<n><ut><mf><sg>$^.<sent>/.<sent>$
+[/rC-HfjSfSHYE]
+[rOyQ7oGQCBEi#0] ^Nous<prn><tn><p1><mf><pl>/Prpers<prn><p1><ut><pl><tn><p1><mf><pl>$ ^ne<adv>/no<adv>$ ^pouvoir<vbmod><pri><p1><pl>/abil<vbmod><pri><p1><pl>$ ^pas<adv>/no<adv>$ ^venir<vblex><inf>/ata<vblex><inf>$ ^demain<n><m><sg>/xadin<n><nt><m><sg>/jaxadin<n><nt><m><sg>$^.<sent>/.<sent>$
+[/rOyQ7oGQCBEi]
+[u4k8cmbX-UJu#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^être<vbser><pri><p1><sg>/sen<vblex><pri><p1><sg>$ ^venir<vblex><pp><m><sg>/ata<vblex><pp><m><sg>$^.<sent>/.<sent>$
+[/u4k8cmbX-UJu]
+[u97n5zOZriz6#0] ^Le<det><def><f><sg>/<det><f><sg>$ ^maison<n><f><sg>/baytu<n><nt><f><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^grand<adj><f><sg>/day<adj><f><sg>$^.<sent>/.<sent>$ ^Il<prn><tn><p3><f><sg>/Prpers<prn><p3><ut><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^jaune<adj><mf><sg>/jalo<adj><mf><sg>$^.<sent>/.<sent>$
+[/u97n5zOZriz6]
+[uBj5JbyMwrQZ#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^plus<adv>/maxmo<adv>$ ^grand<adj><m><sg>/day<adj><m><sg>$ ^que<cnjsub>/ki<cnjsub>$ ^le<det><def><m><sg>/<det><m><sg>$ ^chien<n><m><sg>/bwaw<n><ut><sg>$^.<sent>/.<sent>$
+[/uBj5JbyMwrQZ]
+[uxhD9IrQSvCo#0] ^Le<det><def><f><sg>/<det><f><sg>$ ^maison<n><f><sg>/baytu<n><nt><f><sg>$ ^gris<adj><f><sg>/hwese<adj><f><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^grand<adj><f><sg>/day<adj><f><sg>$^.<sent>/.<sent>$
+[/uxhD9IrQSvCo]
+[vVTen6pu0Wci#0] ^Donner<vblex><imp><p2><sg>/Gibe<vblex><imp><p2><sg>$ ^le<prn><enc><p3><nt>/prpers<prn><p3><nt><sg>$ ^me<prn><enc><p1><mf><sg>/prpers<prn><p1><ut><sg><enc><p1><mf><sg>$ ^!<sent>/!<sent>$
+[/vVTen6pu0Wci]
+[wFt6qojsn2CI#0] ^Il<prn><tn><p3><f><sg>/Prpers<prn><p3><ut><sg>$ ^manger<vblex><fti><p3><sg>/yam<vblex><fti><p3><sg>$^.<sent>/.<sent>$
+[/wFt6qojsn2CI]
+[wsRs11A70Mvq#0] ^Le<det><def><f><sg>/<det><f><sg>$ ^maison<n><f><sg>/baytu<n><nt><f><sg>$ ^de<pr>/de<pr>$ ^Marie<np><ant><f><sg>/Maria<np><ut><ant><f><sg>$ ^être<vbser><pri><p3><sg>/sen<vblex><pri><p3><sg>$ ^plus<adv>/maxmo<adv>$ ^grand<adj><f><sg>/day<adj><f><sg>$ ^que<cnjsub>/ki<cnjsub>$ ^le mien<prn><tn><pos><f><sg>/prpers<det><pos><p1><ut><sg><tn><pos><f><sg>$^.<sent>/.<sent>$
+[/wsRs11A70Mvq]
+[xQeSMJQqgVxv#0] ^Je<prn><tn><p1><mf><sg>/Prpers<prn><p1><ut><sg><tn><p1><mf><sg>$ ^penser<vblex><pri><p1><sg>/fikir<vblex><pri><p1><sg>$ ^que<cnjsub>/ki<cnjsub>$ ^tu<prn><tn><p2><mf><sg>/prpers<prn><p2><ut><sg><tn><p2><mf><sg>$ ^être<vbser><pri><p2><sg>/sen<vblex><pri><p2><sg>$ ^grand<adj><m><sg>/day<adj><m><sg>$^.<sent>/.<sent>$
+[/xQeSMJQqgVxv]
+[yKMG20WPgVWT#0] ^Il<prn><tn><p3><m><sg>/Prpers<prn><p3><ut><sg>$ ^y<prn><pro><adv>/denloka<adv>$ ^avoir<vbhaver><pii><p3><sg>/hare<vblex><pii><p3><sg>$ ^un<det><ind><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$^.<sent>/.<sent>$
+[/yKMG20WPgVWT]
+[zNAlOA-ngX4v#0] ^Le<det><def><m><sg>/<det><m><sg>$ ^chat<n><m><sg>/myaw<n><ut><sg>$ ^qui<rel><mf><sp>/da<prn><mf><sp>$ ^manger<vblex><pri><p3><sg>/yam<vblex><pri><p3><sg>$ ^dormir<vblex><pri><p3><sg>/somno<vblex><pri><p3><sg>$^.<sent>/.<sent>$
+[/zNAlOA-ngX4v]

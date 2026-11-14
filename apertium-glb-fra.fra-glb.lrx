@@ -10,6 +10,18 @@
     </match>
   </rule>
   -->
+
+  <!-- livre: masculine "le livre" = book → kitabu; feminine "la livre" = pound → pondu -->
+  <rule>
+    <match lemma="livre" tags="n.m.*">
+      <select lemma="kitabu"/>
+    </match>
+  </rule>
+  <rule>
+    <match lemma="livre" tags="n.f.*">
+      <select lemma="pondu"/>
+    </match>
+  </rule>
 </rules>
 
 <!--

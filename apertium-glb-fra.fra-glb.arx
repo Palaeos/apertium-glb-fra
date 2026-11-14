@@ -7,6 +7,23 @@
 			<parameter-item has-tags="sent"/>
 		</delimiter>
 
+		<!-- French 3rd-person pronouns (il/elle/ils/elles, le/la/les/lui/leur clitics, son/sa/ses/leur).
+		     Globasa chooses te/to (and tesu/tosu) by the referent's Globasa gender, so the rtx reads
+		     the antecedent noun's gender tag (nt → to) from this reference. -->
+		<def-parameter n="prn3">
+			<anaphor>
+				<parameter-item has-tags="prn tn p3"/>
+				<parameter-item has-tags="prn pro p3"/>
+				<parameter-item has-tags="prn enc p3"/>
+				<parameter-item has-tags="det pos"/>
+			</anaphor>
+
+			<antecedent>
+				<parameter-item has-tags="n" exclude-tags="rel"/>
+				<parameter-item has-tags="np" exclude-tags="rel"/>
+			</antecedent>
+		</def-parameter>
+
 		<def-parameter n="detpos">
 			<anaphor>
 				<parameter-item has-tags="det pos"/>

@@ -1,1 +1,68 @@
-, . \n ? # test punctuation
+# French inputs for apertium-regtest; expected Globasa is in fra-glb-gold.tsv (run test/check-gold.sh)
+Le chat mange le poisson.
+Les chats mangent.
+Le petit chat dort.
+Le chat jaune dort.
+La maison grise est grande.
+Le chat de Marie dort.
+Mon chat dort.
+Notre chat dort.
+Je mangeais.
+Elle mangera.
+Tu mangerais.
+Mange !
+Nous mangerons demain.
+J'ai mangé.
+J'avais mangé.
+J'aurai mangé.
+J'aurais mangé.
+Je suis venu.
+Je vais manger.
+Je viens de manger.
+Le poisson est mangé par le chat.
+Le poisson a été mangé par le chat.
+Je ne mange pas le poisson.
+Je n'ai pas mangé.
+Je ne mange jamais.
+Je ne mange rien.
+Je ne vois personne.
+Il me voit.
+Je lui donne le livre.
+Est-ce que tu manges du poisson ?
+Manges-tu du poisson ?
+Il y a un chat.
+On mange.
+Je peux manger.
+Je veux manger.
+Je mange pour vivre.
+Le chat est plus grand que le chien.
+Le chat qui mange dort.
+J'aime le poisson que je mange.
+Le chat dort. Il mange.
+La maison est grande. Elle est jaune.
+Mon ami parle avec la femme.
+Nous ne pouvons pas venir demain.
+Le garçon a donné le livre à sa mère.
+Où vas-tu ?
+Je pense que tu es grand.
+Si je mange, je dors.
+Il ne mange plus de poisson.
+Je n'ai que du pain.
+Elle est partie avant de manger.
+La femme que j'aime est jeune.
+Je vais le voir.
+Il faut manger.
+Il y avait un chat.
+Donne-le-moi !
+La table est grande. Je la vois.
+La maison est grande. Sa porte est jaune.
+Les chats dorment. Ils mangent.
+Je mangeais souvent des pommes.
+Quand j'étais jeune, je jouais au football.
+Je dormais quand tu es venu.
+J'étais malade.
+Si je mangeais, je dormirais.
+Si je ne mangeais pas, je mourrais.
+Le chat mange la souris.
+Il y a beaucoup de livres.
+La maison de Marie est plus grande que la mienne.
